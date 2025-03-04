@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "796511350960",
+    "project_id": "mid-term-final-project",
+    "storage_bucket": "mid-term-final-project.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796511350960:android:bc06b9f23d16e1679acb75",
+        "android_client_info": {
+          "package_name": "com.netforge.midtermfinalproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWLvUnFRYKMfkBBLWhStl2-UjE0ktw35w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Animal ID -->
+        <TextView
+            android:id="@+id/animalIDTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Animal ID: A12345"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <!-- Species and Breed -->
+        <TextView
+            android:id="@+id/speciesBreedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Species: Cow | Breed: Friesian"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:paddingTop="4dp" />
+
+        <!-- Age and Weight -->
+        <TextView
+            android:id="@+id/ageWeightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age: 5 years | Weight: 500 kg"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:paddingTop="4dp" />
+
+        <!-- Health Status -->
+        <TextView
+            android:id="@+id/healthStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health Status: Approved"
+            android:textSize="14sp"
+            android:textColor="#28A745"
+        android:paddingTop="4dp" />
+
+        <!-- Checkbox for Selection -->
+        <CheckBox
+            android:id="@+id/selectCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingTop="8dp"
+            android:text="Select for Receipts Generation" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

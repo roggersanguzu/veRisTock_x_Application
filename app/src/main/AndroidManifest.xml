@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MIDTERMFINALPROJECT"
+        tools:targetApi="31">
+        <activity
+            android:name=".ItemIdNumber"
+            android:exported="false" />
+        <activity
+            android:name=".IDNumberVerification"
+            android:exported="false" />
+        <activity
+            android:name=".item_buyer_request"
+            android:exported="false" />
+        <activity
+            android:name=".BuyerRequestsAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".BuyerTransactions"
+            android:exported="false" />
+        <activity
+            android:name=".BuyerPurchaseApprovals"
+            android:exported="false" />
+        <activity
+            android:name=".GenerateReceipts"
+            android:exported="false" />
+        <activity
+            android:name=".ApprovedLivestockAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".BuyerMakeOrder"
+            android:exported="false" />
+        <activity
+            android:name=".BuyerLanding"
+            android:exported="false" />
+        <activity
+            android:name=".RequestsToLc"
+            android:exported="false" />
+        <activity
+            android:name=".LC_landingpage"
+            android:exported="false" />
+        <activity
+            android:name=".FarmerApproval"
+            android:exported="false" />
+        <activity
+            android:name=".FarmerTransactionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuyerRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Documents_Upload"
+            android:exported="false" />
+        <activity
+            android:name=".Livestock_Center"
+            android:exported="false" />
+        <activity
+            android:name=".Register_Livestock"
+            android:exported="false" />
+        <activity
+            android:name=".Landing_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Registration"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.netforge.midtermfinalproject.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
